@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            font-size: 1,5em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            width: 100px; height: 30px;
+        }
+        #itxtn1, #itxtn2 {
+            margin-bottom: 10px;
+        }
+        #res {
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <form action="" method="get"> 
+        <input type="number" name="txtn1" id="itxtn1" required placeholder="1° número"> 
+        <label for="itxtn1"></label> +
+        <input type="number" name="txtn2" id="itxtn2" required placeholder="2° número">
+        <label for="itxtn2"></label><br>
+        <input type="button" value="Somar" onclick="somar()"> 
+        <input type="reset" value="Limpar"><br>
+        <div id="res">Resultado:</div>      
+    </form>
+
+    <script>
+        function somar() {
+            var tn1 = document.getElementById ('itxtn1')
+            var tn2 = document.querySelector('input#itxtn2')
+            var res = document.getElementById ('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `O resultado é <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>
