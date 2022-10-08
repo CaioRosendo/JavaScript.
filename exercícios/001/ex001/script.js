@@ -4,12 +4,14 @@ function Carregar(){
     var data = new Date()
     var hora = data.getHours()
     msg.innerHTML = `Agora são ${hora} horas`
-
     if(hora >= 0 && hora < 12) {
-       innerHTML='<img.src="manha.png">'     
-}   else if(hora >=12 && hora >18) {
-    innerHTML='<img.src="tarde.png">'
-}   else {
-        iinnerHTML='<img.src="noite.png">'
+        img.src = 'imagens/manha.png'
+        document.body.style.backgroundColor = '#e2cd9f'
+    } else if(hora >=12 && hora < 18) {
+        img.src = 'imagens/tarde.png'
+        document.body.style.backgroundColor = '#b9846f'
+    } else {
+        img.src = 'imagens/noite.png'
+        document.body.style.backgroundColor = '#515154'
 }
 }
