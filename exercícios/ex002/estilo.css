@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(72, 72, 191);
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+h1 {
+    font-size: 1.3;
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    width: 50vw;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.459);
+}
+
+div{
+    padding: 10px;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: red;
+    font-weight: bolder;
+}
