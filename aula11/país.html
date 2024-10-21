@@ -8,21 +8,21 @@
 </head>
 <body>
     <h1>Brasileiro ou Estrangeiro</h1>
-    <label for="ipais">Em que país você nasceu?</label>
+    <label for="ipais">Qual seu país?</label>
     <input type="text" name="pais" id="ipais">
-    <input type="button" value="verificar" onclick="Resposta()">
-    <div id="resultado">
-    </div>
+    <input type="button" value="Enviar" onclick="verificar()">
+    <div id="resul"></div>
     <script>
-        function Resposta() {
+        function verificar() {
             var pais = window.document.querySelector('input#ipais')
-            var resul = window.document.querySelector('div#resultado')
+            var resul = window.document.querySelector('div#resul')
             var resp = String(pais.value)
             resul.innerHTML = `<p> O país que você nasceu é <Strong> ${resp} </Strong>`
-            if (resp == 'brasil') {
-                resultado.innerHTML += '<p> Você é <strong>Brasiliero </strong>'
-            } else {
-                resultado.innerHTML += '<p> Você é <strong>Estrangeiro</strong>'}
+            if (resp == 'Brasil' || resp == 'brasil' || resp == 'BRASIL') {
+                resul.innerHTML += '<p> Você é <strong>Brasiliero</strong>'}
+            else {
+              resul.innerHTML += ` <p> Você é <strong>Estrangeiro</strong>`
+            }
         }
     </script>
 </body>
