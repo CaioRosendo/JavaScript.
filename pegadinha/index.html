@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            div#sim {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            background-color: green;
+            color: white;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        div#nao {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            background-color: green;
+            color: white;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>M.Gabriel é gay?</h1>
+    <p>clique na resposta...</p>
+    <div id="nao" onclick="clicou()" onmouseout="saiu()"> não
+    </div>
+    <br>
+    <a href="https://www.youtube.com/watch?v=d7BpBAL2ztc&ab_channel=Lonnxx">
+        <div id="sim">sim
+        
+        </div>
+    </a>
+
+
+    <script>
+        function clicou() {
+            var c = document.querySelector('div#nao')
+            c.style.margin = 'auto'
+            c.innerHTML = 'Acho que é. tente novamente'
+            c.style.width = '450px'
+        }
+    </script>
+</body>
+</html>

@@ -6,38 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM</title>
     <style>
-        #area{
-            font-size: 1.5em;
+        div#area {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(53, 125, 53);
+            font-size: 2em;
+            background-color: green;
             color: white;
-            width: 200px; height: 200px;
+            width: 200px;
+            height: 200px;
+            margin: auto;
             line-height: 200px;
             text-align: center;
         }
     </style>
 </head>
 <body>
-    <div id="area">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
         Interaja...
     </div>
 
     <script>
-        var a = window.document.getElementById('area')
-        a.addEventListener('click', clicar)
-        a.addEventListener('mouseenter', entrar)
-        a.addEventListener('mouseout',sair)
         function clicar() {
-            a.innerText = 'Clicou!'
-            a.style.backgroundColor = 'red'
+           var area = document.querySelector('div#area')
+           area.style.background = 'black'
+           area.innerHTML = 'Obrigado por clicar ;) '
+           area.style.width = '310px'
         }
         function entrar() {
-            a.innerText ='Entrou'
-            a.style.backgroundColor = 'blue'
+            var entrou = document.querySelector('div#area')
+            entrou.innerText = "Clique"
         }
+
         function sair() {
-            a.innerText ='Saiu'
-            a.style.backgroundColor = 'green'
+            var saiu = document.querySelector('div#area')
+            saiu.style.background = 'green'
+            saiu.style.width = '200px'
+            saiu.innerHTML = 'Interaja'
         }
     </script>
 </body>
