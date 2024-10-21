@@ -24,11 +24,13 @@
 </head>
 <body>
     <h1>Somando Valores</h1>
-    <form action="" method="get"> 
+    <form method="post"> 
         <input type="number" name="txtn1" id="itxtn1" required placeholder="1° número"> 
         <label for="itxtn1"></label> +
+
         <input type="number" name="txtn2" id="itxtn2" required placeholder="2° número">
         <label for="itxtn2"></label><br>
+        
         <input type="button" value="Somar" onclick="somar()"> 
         <input type="reset" value="Limpar"><br>
         <div id="res">Resultado:</div>      
