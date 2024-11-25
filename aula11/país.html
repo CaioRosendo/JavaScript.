@@ -16,7 +16,7 @@
         function verificar() {
             var pais = window.document.querySelector('input#ipais')
             var resul = window.document.querySelector('div#resul')
-            var resp = String(pais.value)
+           // var resp = String(pais.value)
             resul.innerHTML = `<p> O país que você nasceu é <Strong> ${resp} </Strong>`
             if (resp == 'Brasil' || resp == 'brasil' || resp == 'BRASIL') {
                 resul.innerHTML += '<p> Você é <strong>Brasiliero</strong>'}
